@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNova - Interactive Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">TechNova</div>
+
+            <button class="menu-btn" id="menuBtn">☰</button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="theme-btn" id="themeBtn">🌙</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Build Your Digital Future</h1>
+            <p>
+                We create modern, responsive and interactive digital
+                experiences using the latest web technologies.
+            </p>
+
+            <button class="primary-btn" id="learnBtn">
+                Learn More
+            </button>
+
+            <p id="welcomeMessage" class="hidden">
+                Welcome to TechNova! Thanks for exploring our website.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+
+        <div class="service-container">
+
+            <div class="service-card">
+                <div class="icon">💻</div>
+                <h3>Web Development</h3>
+                <p>
+                    We build responsive and user-friendly websites
+                    for modern businesses.
+                </p>
+                <button class="details-btn">View Details</button>
+            </div>
+
+            <div class="service-card">
+                <div class="icon">🎨</div>
+                <h3>UI/UX Design</h3>
+                <p>
+                    We create attractive interfaces with a focus
+                    on usability and user experience.
+                </p>
+                <button class="details-btn">View Details</button>
+            </div>
+
+            <div class="service-card">
+                <div class="icon">📱</div>
+                <h3>Responsive Design</h3>
+                <p>
+                    Our websites work smoothly on desktops,
+                    tablets and mobile devices.
+                </p>
+                <button class="details-btn">View Details</button>
+            </div>
+
+        </div>
+
+        <p id="serviceMessage"></p>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div>
+            <h2>About TechNova</h2>
+
+            <p>
+                TechNova is a simple demonstration website created
+                to showcase HTML, CSS and JavaScript integration.
+                The project focuses on creating a clean and
+                interactive user experience.
+            </p>
+
+            <button class="primary-btn" id="aboutBtn">
+                Show More
+            </button>
+
+            <p id="aboutText" class="hidden">
+                Our goal is to demonstrate how JavaScript can
+                dynamically change webpage content, handle user
+                events and improve website usability.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+
+        <form id="contactForm">
+
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                >
+                <small id="nameError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                >
+                <small id="emailError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                    id="message"
+                    rows="5"
+                    placeholder="Enter your message"
+                ></textarea>
+                <small id="messageError"></small>
+            </div>
+
+            <button type="submit" class="primary-btn">
+                Send Message
+            </button>
+
+            <p id="formSuccess"></p>
+
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 TechNova. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
